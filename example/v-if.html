@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../assets/js/vue.js"></script>
+
+</head>
+<body>
+    
+<div id='app'>
+        v-if用来判断是否加载html的DOM
+ <div v-if="isLogin">How are you!</div>
+ <div v-else >请登录</div><!--紧挨-->
+ <div>dkfskjf</div>
+
+</div>
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            isLogin:false
+        }
+    });
+    </script>
+</body>
+</html>
